@@ -19,7 +19,7 @@ const Movies = () => {
   }, []);
   return (
     <div>
-      <h2>Movies</h2>
+      <h2 className="mt-4">Movies</h2>
       <SearchForm
         value={query}
         search={handleSearch}

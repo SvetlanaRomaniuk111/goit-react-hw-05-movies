@@ -50,18 +50,18 @@ const MoviePage = () => {
           </div>
           <div>
             <div>
-              <h1>
+              <h1 className="mt-4">
                 {filmData.title}({new Date(filmData.release_date).getFullYear()}
                 )
               </h1>
               <span>User Score: {Math.round(filmData.vote_average * 10)}%</span>
             </div>
             <div>
-              <h3>Overview</h3>
+              <h3 className="mt-4">Overview</h3>
               <span>{filmData.overview}</span>
             </div>
             <div>
-              <h3>Genres</h3>
+              <h3 className="mt-4">Genres</h3>
               <div>
                 {filmGenres.map(e => (
                   <span key={e.id}>{e.name}</span>

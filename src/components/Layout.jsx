@@ -3,7 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 export const Layout = () => {
   return (
     <>
-      <header className="container">
+      <header className="container mt-4">
         <NavLink
           className={({ isActive }) => (isActive ? 'active' : '')}
           to="/"
@@ -17,7 +17,7 @@ export const Layout = () => {
           Movies
         </NavLink>
       </header>
-      <main className="container">
+      <main className="container mt-4">
         <Outlet />
       </main>
     </>

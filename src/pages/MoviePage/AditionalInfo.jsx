@@ -6,7 +6,7 @@ const AditionalInfo = () => {
 
   return (
     <div>
-      <h4>Aditional Information</h4>
+      <h4 className="mt-4">Aditional Information</h4>
       <ul>
         <li>
           <NavLink to={`/movies/${id}/cast`} state={{ from: from }}>

@@ -19,7 +19,7 @@ const Cast = ({ id }) => {
       <LoadingHoc loading={isLoading}>
         {cast.map(e => {
           return (
-            <div key={e.id}>
+            <div key={e.id} className="mb-4">
               <div>
                 <img
                   className={css.cast}
@@ -27,8 +27,8 @@ const Cast = ({ id }) => {
                   alt={e.name}
                 />
               </div>
-              <span>● {e.name}</span>
-              <span>Character: {e.character}</span>
+              <span className="p-2">● {e.name}</span>
+              <span className="p-2">Character: {e.character}</span>
             </div>
           );
         })}
